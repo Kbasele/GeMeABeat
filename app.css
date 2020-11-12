@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,700");
+
+*{
+    padding: 0; 
+    margin: 0; 
+    font-family: Poppins, sans-serif; 
+
+}
+
+.main-header{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    border-bottom:1px solid rgb(218, 213, 213);
+    height:8vh;
+    background-color: whitesmoke;
+
+}
+
+.main-header-searchbox{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    height: 50px;
+    width: 600px;
+    border-radius: 30px;
+    
+}
+
+.main-header-searchbox-content{
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+.main-header-searchbox-content input{
+    color: #666464;
+    border: none;
+    width: 400px;
+    font-size: 1.1rem;
+}
+.main-header-searchbox-content i{
+    font-size: 1.3rem;
+}
+
+#fire-icon{
+    color: #666464;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;    
+    height: 100%;
+}
+.main-header-searchbox-content button{
+    color: #666464;
+    display: flex;
+    justify-content: center;
+    border-radius:0 30px 30px 0px;
+    align-items: center;
+    height: 100%;
+    width: 70px;
+    transition: 0.1s;
+    border: none;
+    
+}
+.main-header-searchbox-content button:hover{
+    color: rgb(53, 53, 53);
+    transition: 0.1s;
+    background-color: #CED3DC ;
+}
+
+.main-body{    
+    background-color: rgb(236, 238, 240);
+    display: flex;
+    height: 92vh;
+}
+
+.main-container{
+    display: flex; 
+}
+
+.main-container-video-section{
+    align-items: center;
+    display: flex; 
+    flex-flow: column;
+    flex: 1;     
+    margin-top: 30px;
+}
+.main-container-sidebar{
+    width: 500px;
+}
+.main-container-video-Words{
+    font-size: 110px;
+    font-weight: 800;
+    outline: none;
+    text-transform: uppercase;
+    background: linear-gradient(135deg, #201f24 0%, #201f24 25%, #201f24 50%, #26252a 75%, #201f24 100%);
+    background-size: 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    animation: animate  1s ease-in infinite;
+    animation-direction: alternate;
+    
+}
+@keyframes animate {
+    100%{
+        background-position: 400%;
+        
+    }
+    0%{    font-size: 115px
+    }
+}
+
+
+.main-container-sidebar-video-section{
+    height: 100%;
+    overflow: scroll;
+
+}
+
+.main-container-sidebar-video-section div{
+    margin: 10px 0 10px 0; 
+    height: 220px;
+    width: 380px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+
+}
+
+
